@@ -8,7 +8,7 @@ export default function Item ({text, onDelete}){
             "flex justify-between rounded-lg", 
             "items-center p-4 ", 
             "bg-gray-700",
-            {"bg-red-500 font-bold": text === "importante"}
+            {"bg-red-500 font-bold": text.includes("importante")}
             )}
         >
             <span>{text}</span>
